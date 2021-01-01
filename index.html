@@ -570,10 +570,8 @@
                   </div>
                   <div class="mb-3">
                     <div class="loading">Göndərilir...</div>
-                    <div class="error-message">Sizin Mesajınız Göndərilmədi</div>
-                    <div class="sent-message">Sizin mesajınız uğurla göndərildi. Təşəkkürlər!</div>
                   </div>
-                  <div class="text-center"><button type=submit>Göndər</button></div>
+                  <div class="text-center"><button onclick="gonder();" type=submit>Göndər</button></div>
             </form>
           </div>     
         </div>
@@ -615,6 +613,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    function gonder(){
+      setTimeout(function(){ alert("MESAJINIZ UĞURLA GÖNDƏRİLDİR!"); }, 1000);
+    }
+  </script>
 
 </body>
 
