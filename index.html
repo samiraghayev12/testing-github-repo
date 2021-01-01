@@ -1,4 +1,4 @@
--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -58,7 +58,7 @@
 
       <nav class="nav-menu">
         <ul>
-          <li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>Ana Səhifə</span></a></li>
+          <li class="active"><a href="index"><i class="bx bx-home"></i> <span>Ana Səhifə</span></a></li>
           <li><a href="#about"><i class="bx bx-user"></i> <span>Haqqımda</span></a></li>
           <li><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
           <li><a href="#services"><i class="bx bx-server"></i> Ümumi</a></li>
@@ -553,40 +553,25 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Adınız</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Ən az 4 işarəni daxil edin"/>
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Email</label>
-                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="email adresinizi daxil edin" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Mövzu</label>
-                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Zəhmət olmasa ən azı 8 mövzu işarəsi daxil edin" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <label for="name">Mesajınız</label>
-                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Mənim üçün bir şey yazın"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Göndərilir...</div>
-                <div class="error-message">Sizin Mesajınız Göndərilmədi</div>
-                <div class="sent-message">Sizin mesajınız uğurla göndərildi. Təşəkkürlər!</div>
-              </div>
-              <div class="text-center"><button type="submit">Göndər</button></div>
+            <form class="php-email-form" role="form" accept-charset=utf-8 action="https://formspree.io/f/mwkwwjoq" id=fs-frm method=post name=simple-contact-form>             
+                  <div class=row>
+                      <div class="form-group col-md-6">
+                        <label for=name>Ad</label> 
+                        <input autocomplete="off" type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Ən az 4 işarəni daxil edin" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for=email-address>Email adresi</label> 
+                        <input class="form-control" data-rule="email" data-msg="email adresinizi daxil edin" id=email-address name=_replyto required type=email>
+                      </div>
+                  </div>
+                  <div class=form-group>
+                      <label for=name>Mesajınız</label> 
+                      <textarea class="form-control" id="message" name="message" rows="10" ></textarea> 
+                  </div>
+                  <div class="text-center"><button type=submit>Göndər</button></div>
             </form>
-          </div>
-
+          </div>     
         </div>
-
       </div>
     </section><!-- End Contact Section -->
 
