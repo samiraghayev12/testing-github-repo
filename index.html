@@ -616,6 +616,13 @@
   <script>
     function gonder(){
       setTimeout(function(){ alert("MESAJINIZ UĞURLA GÖNDƏRİLDİR!"); }, 2000);
+      document.getElementById('name').value="";
+      document.getElementById('message').value="";
+      document.getElementById('email-address').value="";
+    }
+    function send(){
+      setTimeout(function(){gonder();},2000);
+      
     }
   </script>
 
