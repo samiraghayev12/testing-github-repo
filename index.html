@@ -15,7 +15,8 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+  <!-- Nurlanin fontu-->
+  <script src="https://kit.fontawesome.com/ee593f8ec8.js" crossorigin="anonymous"></script>
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
@@ -569,9 +570,9 @@
                       <textarea class="form-control" id="message" name="message" rows="10" ></textarea> 
                   </div>
                   <div class="mb-3">
-                    <div class="loading">Göndərilir...</div>
+                    <div id="gonderme" style="display:none;"><i class="fas fa-spinner fa-spin"></i>Göndərilir...</div>
                   </div>
-                  <div class="text-center"><button onclick="gonder();" type=submit>Göndər</button></div>
+                  <div class="text-center"><button onclick="send();" type=submit>Göndər</button></div>
             </form>
           </div>     
         </div>
@@ -615,12 +616,14 @@
   <script src="assets/js/main.js"></script>
   <script>
     function gonder(){
-      alert("MESAJINIZ UĞURLA GÖNDƏRİLDİR!");
+      alert("MESAJINIZ UĞURLA GÖNDƏRİLDİ!");
+      document.getElementById('gonderme').style.display="none";
       document.getElementById('name').value = "";
       document.getElementById('message').value = "";
       document.getElementById('email-address').value = "";
     }
     function send(){
+      document.getElementById('gonderme').style.display="block";
       setTimeout(function(){gonder();},2000);
     }
   </script>
