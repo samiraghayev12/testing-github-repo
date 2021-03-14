@@ -4,6 +4,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+alert("Salam saytıma xoş gəlmisiniz. Saytımızda çoxlu sayda şəkil olduğuna görə bir az vaxt gec açəıla bilər, zəhmət olmasa biraz gözləyin. TƏŞƏKKÜRLƏR!!!")
 !(function($) {
   "use strict";
 
