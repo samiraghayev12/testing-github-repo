@@ -4,7 +4,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-alert("Salam saytıma xoş gəlmisiniz. Saytımızda çoxlu sayda şəkil olduğuna görə bir az vaxt gec açıla bilər, zəhmət olmasa biraz gözləyin. TƏŞƏKKÜRLƏR!!!")
+alert("Salam saytıma xoş gəlmisiniz. Saytımızda çoxlu sayda şəkil olduğuna görə bir az vaxt gec açıla bilər, zəhmət olmasa biraz gözləyin. Əgər saytımızda olan şəkillər açılmazsa internetinizi yoxlayın və ya səhifəni yeniləyin. TƏŞƏKKÜRLƏR!!!")
 !(function($) {
   "use strict";
 
