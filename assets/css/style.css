@@ -32,6 +32,7 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: auto;
